@@ -31,17 +31,17 @@ Price: The price of the ticket
 
 ### Exploratory Data Analysis
 
-####Analysis of various airlines and their prices in the dataset to find out the premium and cheap airlines.
+#### Analysis of various airlines and their prices in the dataset to find out the premium and cheap airlines.
 
 ![airline_price][1]
 
-####Analysis of various source location and the prices of the airline at that location.
+#### Analysis of various source location and the prices of the airline at that location.
 
 ![source_price][2]
 
-###Feature Selection
+### Feature Selection
 
-####Finding out the best feature which will contribute and have good relation with target variable is very important and following are some of the feature selection methods,
+#### Finding out the best feature which will contribute and have good relation with target variable is very important and following are some of the feature selection methods,
 
 heatmap : Finds correlation between Independent and dependent attributes
 feature_importance_ : feature importances for better visualization
@@ -51,30 +51,30 @@ SelectKBest
 
 ![importance][4]
 
-###Fitting model using Random Forest
+### Fitting model using Random Forest
 
-####Distribution plot
+#### Distribution plot
 
 ![displot][5]
 
-####Scatter plot
+#### Scatter plot
 
 ![scatterplot][6]
 
-###Hyperparameter Tuning using RandomizedSearchCV and GridSearchCV
+### Hyperparameter Tuning using RandomizedSearchCV and GridSearchCV
 
-####Distribution plot after hyperparameter tuning
+#### Distribution plot after hyperparameter tuning
 
 ![displot_after][7]
 
-####Scatter plot after hyperparameter tuning
+#### Scatter plot after hyperparameter tuning
 
 ![scatterplot_after][8]
 
 
-[0]: images/homepage.jpeg
-[1]: images/airline_price.jpeg
-[2]: images/source_price.jpeg
+[0]: images/homepage.jpg
+[1]: images/airline_price.jpg
+[2]: images/source_price.jpg
 [3]: images/heatmap.png
 [4]: images/importance.png
 [5]: images/displot.png

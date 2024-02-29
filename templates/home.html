@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Price Prediction</title>
+
+
+    
+    <!-- css -->
+    <link rel="stylesheet" href="../static/css/style1.css">
+
+
+</head>
+<body>
+
+    
+    <div class="form">
+      <form action="/predict" method="post">
+
+      <div class="title">Flight Price Prediction</div>
+      <div class="subtitle">Let's predict your flight fare!</div>
+      
+      <div class="input-container ic1">
+        <div class="subtitle">Departure Date</div>
+        <input class="input" type="datetime-local" name="Dep_Time" id="Dep_Time" required="required" placeholder=" " />
+      </div>
+    
+      <div class="input-container ic2">
+        <div class="subtitle">Arrival Date</div>
+        <input class="input" type="datetime-local" name="Arrival_Time" id="Arrival_Time" required="required"  placeholder=" " />
+      </div>
+
+      <div class="input-container ic2">
+        <div class="subtitle">Departure City</div>
+        <select class="select" name="Source" id="Source" required="required" placeholder=" " />
+                <option value="Delhi">Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
+        </select>
+      </div>
+
+      <div class="input-container ic2">
+        <div class="subtitle">Arrival City</div>
+        <select class="select" name="Destination" id="Destination" required="required" placeholder=" " />
+                <option value="Cochin">Cochin</option>
+                <option value="Delhi">Delhi</option>
+                <option value="New Delhi">New Delhi</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Kolkata">Kolkata</option>
+        </select>
+      </div>
+
+      <div class="input-container ic2">
+        <div class="subtitle">Number of halts</div>
+        <select class="select" name="stops" id="stops" required="required" placeholder=" " />
+                <option value="0">Non-Stop</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+        </select>
+      </div>
+
+
+      <div class="input-container ic2">
+        <div class="subtitle">Airlines</div>
+        <select class="select" name="airline" id="airline" required="required" placeholder=" " />
+                <option value="Jet Airways">Jet Airways</option>
+                <option value="IndiGo">IndiGo</option>
+                <option value="Air India">Air India</option>
+                <option value="Multiple carriers">Multiple carriers</option>
+                <option value="SpiceJet">SpiceJet</option>
+                <option value="Vistara">Vistara</option>
+                <option value="Air Asia">Air Asia</option>
+                <option value="GoAir">GoAir</option>
+                <option value="Multiple carriers Premium economy">Multiple carriers Premium economy</option>
+                <option value="Jet Airways Business">Jet Airways Business</option>
+                <option value="Vistara Premium economy">Vistara Premium economy</option>
+                <option value="Trujet">Trujet</option>
+        </select>
+      </div>
+
+      <input type="submit" value="Predict Fare" class="submit">
+      
+	  <div class="title">
+      {% if prediction_text %}
+      {{ prediction_text }}
+      {% endif %}
+	  </div>
+    </form>
+</div>
+
+
+</body>
+
+</html>

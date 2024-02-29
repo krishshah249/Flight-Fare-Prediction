@@ -72,9 +72,9 @@ SelectKBest
 ![scatterplot_after][8]
 
 
-[0]: images/homepage.jpg
-[1]: images/airline_price.jpg
-[2]: images/source_price.jpg
+[0]: images/homepage.png
+[1]: images/airline_price.png
+[2]: images/source_price.png
 [3]: images/heatmap.png
 [4]: images/importance.png
 [5]: images/displot.png

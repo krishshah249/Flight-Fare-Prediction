@@ -1,6 +1,6 @@
 # Flight-Fare-Prediction
 
-This project facilitates:
+### This project facilitates:
 
 * End to end implementation and deployment of Machine Learning Flight Fare Prediction web application created with Flask and deployed on the Heroku platform.
 
